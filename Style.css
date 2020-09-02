@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    }
+
+    .inform {
+    display: block;
+    border: 3px solid gold;
+    padding: 5px;
+    font-size: 20px;
+    }
+
+    span {
+    font-weight: bold;
+    }
+
+    em {
+    font-size: 1.2em;
+    }
+
+    li:hover {
+    transform: translate(170px) scale(1.2);
+    background-color: silver;
+
+    }
+
+    footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    }

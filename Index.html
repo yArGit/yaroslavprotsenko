@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Git HW yAr Protsenko</title>
-        <link rel="stylesheet" href="./styles.css" type='text/css'>
+        <style>
+                h1 {
+                text-align: center;
+                }
+
+                .inform {
+                display: block;
+                border: 3px solid gold;
+                padding: 5px;
+                font-size: 20px;
+                }
+
+                span {
+                font-weight: bold;
+                }
+
+                em {
+                font-size: 1.2em;
+                }
+
+                li:hover {
+                transform: translate(170px) scale(1.2);
+                background-color: silver;
+    
+                }
+
+                footer {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 80px;
+                }
+
+                </style>
+        </head>
     <body>
-        <h1>Greetings. This is mi first homework. Wish you to enjoy your work</h1>
 
+            <h1><img src="https://itspoma.github.io/cursor-website-v9-markup/assets/img/logo/logo-500px.png" width="25px">Greetings. This is mi first homework. Wish you to enjoy your study.</h1>
+                <div class="inform">
     <ul>
-        <li>git config --global user.name "Ім'я" Вказує Ваше "Ім'я" для відображення у коммітах </li>
-        <li>git config --global user.email "електронна пошта" Вказує Вашу пошту для відображення у коммітах</li>
-        <li>git init створює віртуальну папку дял роботи в GIT</li>
-        <li>git status - Виводить стан файлів(Змінені/не змінені/очікують додавання в індекс) у робочій директорії</li>
-        <li>git add - Додає файл у тимчасову папку для відслідковування та комміту</li>
-        <li>git commit - зберегає всі дані, які були доджані в індекс за допомогою <span>git add</span> </li>
-        <li>git log Виводить історію коммітів</li>
-        <li>git checkout Використовується для перемикання гілок</li>
-        <li>git branch Виводить гілки проекту. git branch 'назва' створює нову гілку</li>
-        <li>git push Зберігає дані у віддалений репозиторій</li>
-        <li>git pull Записує дані віддаленого репозиторію у нашу гілку</li>
-        <li>git merge 'назва' Зберігає зміни гілки 'назва' у гілку мастер </li>
-        <li>git clone Клонує віддалений репозиторій у нову дикректорію зі збереженням гілок відслідковування</li>
-        <li>git revert відміняє зміни, які були внесенні, одним за попередніх, коммітом</li>
-        <li>git reset - відміняє зміни. git reset -hard відміняє зміни до останнього комміту. git reset -soft відміняє останній комміт</li>
-        <li>git rebase є автоматизованим <span>git cherry-pick</span>, що застосовуэться для декількох коммітів</li>
-        <li>git cherry-pick використовується для внесення змін, які вже були внесені іншим коммітом. Створює новий комміт</li>
-        <li>git stash Зберігає всі зміни без комміту</li>
-        <li>.gitignore файл використовується для того, щоб непотрібні файли проекту ігнорувались git. Можна викорустовувати шаблони. </li>
+        <li><em>git config --global user.name "Ім'я"</em> Вказує Ваше "Ім'я" для відображення у коммітах </li>
+        <li><em>git config --global user.email "електронна пошта" </em> Вказує Вашу пошту для відображення у коммітах</li>
+        <li><em>git init</em> Cтворює віртуальну папку для роботи в GIT</li>
+        <li><em>git status</em>  Виводить стан файлів(Змінені/не змінені/очікують додавання в індекс) у робочій директорії</li>
+        <li><em>git add</em> Додає файл у тимчасову папку для відслідковування та комміту</li>
+        <li><em>git commit</em> зберегає всі дані, які були додані в індекс за допомогою <span>git add</span> </li>
+        <li><em>git log</em> Виводить історію коммітів</li>
+        <li><em>git checkout</em> Використовується для перемикання гілок</li>
+        <li><em>git branch</em> Виводить гілки проекту. <span>git branch 'назва'</span> створює нову гілку</li>
+        <li><em>git push</em> Зберігає дані у віддалений репозиторій</li>
+        <li><em>git pull</em> Записує дані віддаленого репозиторію у нашу гілку</li>
+        <li><em>git merge 'назва'</em> Зберігає зміни гілки 'назва' у гілку мастер </li>
+        <li><em>git clone</em> Клонує віддалений репозиторій у нову дикректорію зі збереженням гілок відслідковування</li>
+        <li><em>git revert</em> Відміняє зміни, які були внесенні, одним за попередніх, коммітом</li>
+        <li><em>git reset</em>  Відміняє зміни. <span>git reset -hard</span> відміняє зміни до останнього комміту. <span>git reset -soft</span> відміняє останній комміт</li>
+        <li><em>git rebase</em> є автоматизованим <span>git cherry-pick</span>, що застосовуэться для декількох коммітів</li>
+        <li><em>git cherry-pick</em> Використовується для внесення змін, які вже були внесені іншим коммітом. Створює новий комміт</li>
+        <li><em>git stash</em> Зберігає всі зміни без комміту</li>
+        <li><em>.gitignore файл</em> використовується для того, щоб незадіяні файли проекту ігнорувались git. Можна викорустовувати шаблони. </li>
     </ul>
-
+                </div>
+            <footer>
+                <p>Copyright from codeguida.com</p>
+            </footer>
 </body>
 
 </html>
